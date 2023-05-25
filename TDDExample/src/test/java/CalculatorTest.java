@@ -60,15 +60,6 @@ class CalculatorTest {
     }
 
     @Test
-    void testDivisionByZero() {
-        assertThrows(
-                IllegalArgumentException.class,
-                () -> Calculator.divide(12.5, 0),
-                "IllegalArgumentException expected."
-        );
-    }
-
-    @Test
     void testDivision6() {
 
         Exception exception = assertThrows(
